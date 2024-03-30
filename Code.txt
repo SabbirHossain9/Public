@@ -1,0 +1,14 @@
+var widget = apex.region('').widget();
+var grid = widget.interactiveGrid('getViews', 'grid');
+var model = grid.model;
+var selRecs = grid.view$.grid("getSelectedRecords");
+
+var newValue1 = $v("");
+
+selRecs.forEach(function(r) {
+    
+    if (newValue1 !== null && newValue1 !== undefined && newValue1 !== "") {
+        model.setValue(r, "", newValue1);
+    }
+ 
+});
