@@ -1,0 +1,14 @@
+document.onkeyup = function(e) {
+    switch(e.keyCode) {
+        case 83: 
+            document.getElementById("btns2").click();
+            break;    
+    }
+}
+
+
+
+
+
+
+<b>Alt+C=Clear &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>
